@@ -1,0 +1,11 @@
+@use "./variables" as *;
+
+main {
+  &.main-container {
+    margin-top: 66px;
+
+    @media (min-width: $breakpoint-md) {
+      margin-top: 68px;
+    }
+  }
+}

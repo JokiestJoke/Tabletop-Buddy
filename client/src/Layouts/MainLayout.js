@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../components/Header";
+import '../scss/_main-layout.scss';
 
 const MainLayout = ({ children }) => {
   return (
-    <main className="main-container">{children}</main>
+    <>
+      <Header />
+      <main className="main-container">{children}</main>
+    </>
   );
-}
+};
+
+export default MainLayout;
