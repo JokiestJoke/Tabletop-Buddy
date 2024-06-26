@@ -12,15 +12,32 @@ import '../scss/_header.scss'
 
 const Header = () => {
   return (
-    <header className={`header nav-container`}>
+    <header>
       <Navbar collapseOnSelect expand="lg" fixed="top" >
+        
         <Container>
           <Navbar.Brand to="/">Tabletop Buddy</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" aria-label="Toggle navigation" />
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' aria-label='Toggle navigation' />
           <Navbar.Collapse id="responsive-navbar-nav">
-
+            
+            <Nav className='me-auto'>
+              <>
+                <Nav.Item>
+                  <Nav.Link href="#home">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#dnd">Dungeons & Dragons</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#40k">Warhammer 40k</Nav.Link>
+                </Nav.Item>
+              </>
+            
+            </Nav>
+          
           </Navbar.Collapse>
         </Container>
+
       </Navbar>
     </header>
   );
