@@ -22,15 +22,22 @@ header {
         }
       }
     }
-  }
 
-  &:navbar-brand {
-    color: $color-white;
-  }
+    button {
+      &.navbar-toggler {
+        border-color: $color-white;
+      }
 
-  // .navbar-brand {
-  //   color: $color-white
-  // }
+      span {
+        &.navbar-toggler-icon {
+          background-image: $navbar-toggler-hamburger;
+        }
+
+      }
+    }
+
+
+  }
 
  
 }
