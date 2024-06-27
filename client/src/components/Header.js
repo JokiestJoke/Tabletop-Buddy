@@ -21,17 +21,29 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             
             <Nav className='me-auto'>
-              
               <>
                 <Nav.Item>
                   <Nav.Link href="#home">Home</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="#dnd">Dungeons & Dragons</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="#40k">Warhammer 40k</Nav.Link>
-                </Nav.Item>
+                <NavDropdown renderMenuOnMount={true} title="Dungeons & Dragons" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item to="#">Player Character Creator</NavDropdown.Item>
+                  <NavDropdown.Item to="#">Monster Creator</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item to="#">About</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown renderMenuOnMount={true} title="Warhammer 40,000" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item to="#">Army Builder</NavDropdown.Item>
+                  <NavDropdown.Item to="#">Wrath and Glory</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item to="#">About</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown renderMenuOnMount={true} title="Help" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item to="#">Report a Bug</NavDropdown.Item>
+                  <NavDropdown.Item to="#">Version Log</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item to="#">Contact Us</NavDropdown.Item>
+                </NavDropdown>
+                
               </>
             
             </Nav>

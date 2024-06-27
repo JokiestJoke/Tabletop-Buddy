@@ -3,7 +3,7 @@
 header {
   .navbar {
     padding: 12px 0;
-    background-image: $blue-gradient;
+    background-image: $purple-blue-gradient;
 
     @media (min-width: 992px) {
       padding: 0;
@@ -33,6 +33,46 @@ header {
           background-image: $navbar-toggler-hamburger;
         }
 
+      } 
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        &:first-child {
+          margin-top: 20px;
+
+          @media (min-width: $breakpoint-md) {
+            margin-top: 0;
+          }
+        }
+
+      .nav-item {
+        &.dropdown {
+          border-bottom: 1px solid $color-white;
+          
+          @media (min-width: $breakpoint-md) {
+            border-bottom: 0;
+          }
+        }
+          &:hover {
+            .dropdown-menu {
+              display: block;
+            }
+          }
+          
+          a {
+            &.dropdown-toggle {
+              color: $color-drexel-orange;
+            }
+
+            &::before {
+              width: 100%;
+            }
+
+            
+
+          }
+        }
       }
     }
 
