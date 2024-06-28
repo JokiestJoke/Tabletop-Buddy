@@ -1,8 +1,9 @@
 @use "./variables" as *;
 
 header {
+
   .navbar {
-    padding: 12px 0;
+    padding: 12px 0px;
     background-image: $purple-lavender-gradient;
 
     @media (min-width: 992px) {
@@ -169,10 +170,45 @@ header {
           //
           a {
             &.nav-link {
+              padding-top: 10px;
               font-weight: $font-semi-bold;
               font-size: 20px;
               line-height: 22px;
               color: $color-white;
+              
+              
+              &.top-menu-item {
+                padding: 12px 0;
+                border-bottom: 1px solid $color-white;
+
+                @media (min-width: $breakpoint-md) {
+                  padding: 22px 16px;
+                  border-bottom: none;
+                }
+              }
+
+              @media (min-width: $breakpoint-md) {
+                &:not(.orange-link, .login) {
+                  &::before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: $color-drexel-orange;
+                    transition: all 0.3s;
+                    position: relative;
+                    top: 32px;
+                  }
+
+                  &:hover {
+                    color: $color-drexel-orange;
+
+                    &::before {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
             }
           }
         } 

@@ -1,10 +1,13 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
+//import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../scss/_header.scss'
+//import DiceyMascotMain from '../utils/Dicey_Mascot.png'
+import DiceyLogo from './DiceyLogo';
 
 /*
  * Header component that renders the navigation bar at the top of the application.
@@ -16,6 +19,8 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg" fixed="top" >
         
         <Container>
+          {/* <Image src={DiceyMascotMain} rounded/> */}
+          <DiceyLogo width={75} />
           <Navbar.Brand to="/">Tabletop Buddy</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' aria-label='Toggle navigation' />
           <Navbar.Collapse id="responsive-navbar-nav">
