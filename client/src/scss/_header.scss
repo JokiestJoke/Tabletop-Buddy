@@ -3,7 +3,7 @@
 header {
   .navbar {
     padding: 12px 0;
-    background-image: $purple-blue-gradient;
+    background-image: $purple-lavender-gradient;
 
     @media (min-width: 992px) {
       padding: 0;
@@ -46,38 +46,88 @@ header {
           }
         }
 
-      .nav-item {
-        &.dropdown {
-          border-bottom: 1px solid $color-white;
-          
-          @media (min-width: $breakpoint-md) {
-            border-bottom: 0;
-          }
-        }
-          &:hover {
-            .dropdown-menu {
-              display: block;
+        .nav-item {
+          &.dropdown {
+            border-bottom: 1px solid $color-white;
+            
+            @media (min-width: $breakpoint-md) {
+              border-bottom: 0;
+            }
+
+            &:hover {
+              .dropdown-menu {
+                display: block;
+              }
+
+              a {
+                &.dropdown-toggle {
+                  color: $color-drexel-orange;
+
+                  &::before {
+                    width: 100%;
+                  }
+
+                  &::after {
+                    content: "";
+                    transform: rotate(135deg);
+                    top: 31px;
+                    border-color: $color-drexel-orange;
+                  }
+                }
+              }
             }
           }
-          
+          //
           a {
             &.dropdown-toggle {
-              color: $color-drexel-orange;
+              padding: 12px 0;
+              position: relative;
+
+              @media (min-width: $breakpoint-md) {
+                padding: 22px 20px 22px 17px;
+              }
+
+              &::after {
+                font-size: 32px;
+                content: "+";
+                position: absolute;
+                top: 25px;
+                right: 0;
+                transform: translate(-50%, -50%);
+                font-weight: 400;
+                border: 0;
+                margin-left: 0;
+                transition: all 0.3s;
+
+                @media (min-width: $breakpoint-md) {
+                  content: "";
+                  border: 3px solid $color-white;
+                  border-width: 0 0 3px 3px;
+                  height: 10px;
+                  width: 10px;
+                  position: absolute;
+                  transform: rotate(-45deg);
+                  top: 26px;
+                  right: 2px;
+                }
+              }
+              
+              &.show {
+                &::after {
+                  content: "\2013";
+
+                    @media (min-width: $breakpoint-md) {
+                      content: "";
+                      transform: rotate(135deg);
+                      top: 31px;
+                    }
+                }
+              }
             }
-
-            &::before {
-              width: 100%;
-            }
-
-            
-
           }
-        }
+          
+        } 
       }
     }
-
-
   }
-
- 
 }

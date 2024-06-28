@@ -20,6 +20,7 @@ $color-drexel-orange: #f7c500;
 $color-drexel-yellow: #ffc600;
 $color-light-yellow: #FFE53B;
 $color-muted-purple: #491585;
+$color-lavender: #B57EDC;
 $color-light-blue: #00DBDE;
 $color-aqua-marine-green: #0b8491;
 $color-muted-blue: #006298;
@@ -51,7 +52,8 @@ $black-gradient: linear-gradient(109.6deg, $color-warm-black 11.2%, $color-light
 $orange-gradient: linear-gradient(135deg, $color-drexel-yellow 0, $color-creamy-orange 100%);
 $blue-orange-gradient: linear-gradient(45deg, $color-drexel-blue 20%, $color-creamy-orange 100%);
 $yellow-red-gradient: linear-gradient(135deg, $color-light-red 0, $color-light-yellow 100%);
-$purple-blue-gradient: linear-gradient(109.6deg, $color-muted-purple 13.4%, $color-muted-blue 100.2%);;
+$purple-blue-gradient: linear-gradient(109.6deg, $color-muted-purple 13.4%, $color-muted-blue 100.2%);
+$purple-lavender-gradient: linear-gradient(109.6deg, $color-muted-purple 13.4%, $color-lavender 100.2%);
 
 /* Background images variables */
 $navbar-toggler-hamburger: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
