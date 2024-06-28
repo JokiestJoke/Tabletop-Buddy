@@ -123,9 +123,58 @@ header {
                     }
                 }
               }
+              + .dropdown-menu {
+                border: 0;
+                background: transparent;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 5px;
+
+                @media (min-width: $breakpoint-md) {
+                  top: 66px;
+                  left: 10px;
+                  background: $purple-lavender-gradient;
+                  border-radius: 0 0 6px 6px;
+                  padding: 8px 0;
+                }
+
+                a {
+                  font-size: 18px;
+                  color: $color-white;
+                  padding: 6px 9px 6px 2px;
+
+                  @media (min-width: $breakpoint-md) {
+                    padding: 4px 16px;
+                  }
+                  
+                  &:hover,
+                  &:focus {
+                    color: $color-drexel-orange;
+                    background: transparent;
+                  }
+
+                  hr {
+                    display: none;
+  
+                    @media (min-width: $breakpoint-md) {
+                      display: block;
+                      border-color: $color-white;
+                    }
+                  } 
+                }
+              
+              }
             }
           }
-          
+          //
+          a {
+            &.nav-link {
+              font-weight: $font-semi-bold;
+              font-size: 20px;
+              line-height: 22px;
+              color: $color-white;
+            }
+          }
         } 
       }
     }
