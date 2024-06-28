@@ -71,14 +71,13 @@ header {
                   &::after {
                     content: "";
                     transform: rotate(135deg);
-                    top: 31px;
+                    top: 30px;
                     border-color: $color-drexel-orange;
                   }
                 }
               }
             }
           }
-          //
           a {
             &.dropdown-toggle {
               padding: 12px 0;
@@ -170,7 +169,7 @@ header {
           //
           a {
             &.nav-link {
-              padding-top: 10px;
+              padding-top: 11px;
               font-weight: $font-semi-bold;
               font-size: 20px;
               line-height: 22px;
