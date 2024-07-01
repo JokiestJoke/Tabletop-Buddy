@@ -1,0 +1,32 @@
+@use "./variables" as *;
+
+footer {
+  padding: 12px 0;
+  background-image: $purple-lavender-gradient;
+  
+  a {
+    color: $color-white;
+    padding: 2px;
+  }
+  span {
+    padding: 10px;
+    color: $color-white
+  }
+
+  div {
+    font-size: 20px;
+    font-weight: $font-regular;
+    color: $color-white;
+
+    
+
+    .row {
+      .col{
+        
+        @media (min-width: $breakpoint-md) {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

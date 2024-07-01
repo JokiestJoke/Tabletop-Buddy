@@ -1,0 +1,63 @@
+/* Font variables */
+$font-source-sans: "Source Sans 3", sans-serif;
+$font-black: 900;
+$font-extra-bold: 800;
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-medium: 500;
+$font-regular: 400;
+$font-light: 300;
+$font-extra-light: 200;
+
+/* Colors variables */
+$color-white: #ffffff;
+$color-black: #000000;
+$color-warm-black: #181716;
+
+
+$color-drexel-blue: #07294d;
+$color-drexel-orange: #f7c500;
+$color-drexel-yellow: #ffc600;
+$color-light-yellow: #FFE53B;
+$color-muted-purple: #491585;
+$color-lavender: #B57EDC;
+$color-light-blue: #00DBDE;
+$color-aqua-marine-green: #0b8491;
+$color-muted-blue: #006298;
+$color-light-green: #b7bf10;
+$color-rich-red: #9e0b0f;
+$color-light-red: #FF2525;
+$color-pantone-red: #d14124;
+$color-creamy-orange: #ff8f1c;
+$color-dark-gray: #555;
+$color-font-black: #373737;
+$color-light-grey: #3f3d3d;
+$color-cool-gray: #a7a8aa;
+$color-warm-gray: #bfb8af;
+$color-greenish-gray: #bac5b9;
+$color-light-gray: #d0d3d4;
+
+/* Layout breakpoints variables */
+$breakpoint-xs: 480px;
+$breakpoint-sm-min: 767px;
+$breakpoint-sm: 768px;
+$breakpoint-md-min: 991px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-ex-lg: 1400px;
+
+/* Background gradients variables */
+$blue-gradient: linear-gradient(135deg, $color-drexel-blue 0, $color-muted-blue 100%);
+$black-gradient: linear-gradient(109.6deg, $color-warm-black 11.2%, $color-light-grey 78.9%);
+$orange-gradient: linear-gradient(135deg, $color-drexel-yellow 0, $color-creamy-orange 100%);
+$blue-orange-gradient: linear-gradient(45deg, $color-drexel-blue 20%, $color-creamy-orange 100%);
+$yellow-red-gradient: linear-gradient(135deg, $color-light-red 0, $color-light-yellow 100%);
+$purple-blue-gradient: linear-gradient(109.6deg, $color-muted-purple 13.4%, $color-muted-blue 100.2%);
+$purple-lavender-gradient: linear-gradient(109.6deg, $color-muted-purple 13.4%, $color-lavender 100.2%);
+
+/* Background images variables */
+$navbar-toggler-hamburger: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+$form-validation-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+
+/* D20 Mascots */
+$dicey_primary_mascot: url(../utils/Dicey_Mascot.png)
