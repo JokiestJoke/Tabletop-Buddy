@@ -14,9 +14,6 @@ const AppRoutes = () => {
         <Route path='/' element={ <Home /> }/> 
         {DndRoutes()}
         <Route path='*' element={ <PageNotFound /> } />
-        {/* <Route path="/" element={<Home />} />
-        
-        <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </Router>
   );
