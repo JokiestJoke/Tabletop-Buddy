@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../scss/_header.scss'
 import DiceyLogo from './DiceyLogo';
-import LinkFormatter from './LinkFormatter';
+
 /*
  * Header component that renders the navigation bar at the top of the application.
  */
@@ -15,13 +15,11 @@ const Header = () => {
   return (   
     <header>
       <Navbar collapseOnSelect expand="lg" fixed="top" >
-        
         <Container>
           <DiceyLogo width={75} />
           <Navbar.Brand as={Link} to="/">Tabletop Buddy</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' aria-label='Toggle navigation' />
           <Navbar.Collapse id="responsive-navbar-nav">
-            
             <Nav className='me-auto'>
               <>
                 <Nav.Item>
@@ -45,11 +43,8 @@ const Header = () => {
                   <NavDropdown.Divider />
                   <NavDropdown.Item to="#">Contact Us</NavDropdown.Item>
                 </NavDropdown>
-                
               </>
-            
             </Nav>
-          
           </Navbar.Collapse>
         </Container>
 
