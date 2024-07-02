@@ -1,18 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
+import PlayerCharacterCreation from '../pages/PlayerCharacterCreation';
 
 /**
  * A component that renders a group of routes related to Dungeons and Dragons.
  *
  
  */
-const ProofRoutes = () => {
+const DndRoutes = () => {
   return (
     <>
-      {/* <Route path="/DungeonsAndDragons" element={} /> */}
+      <Route path="/PlayerCharacterCreation" element={ <PlayerCharacterCreation /> } />
     </>
   );
 };
 
-export default ProofRoutes;
+export default DndRoutes;
