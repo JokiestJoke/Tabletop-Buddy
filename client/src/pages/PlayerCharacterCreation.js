@@ -11,7 +11,7 @@ import '../scss/_page-not-found.scss';
 const PlayerCharacterCreation = () => {
   return (
     <MainLayout>
-      <Container className="text-center page-not-found">
+      <Container className="text-center player-character-creation">
         <h1>Player Character Creation</h1>
         <h2>Under Construction</h2>
       </Container>

@@ -1,6 +1,4 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import SocialsButtonGroup from './SocialsButtonGroup';
 import '../scss/_footer.scss';
@@ -13,15 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer mt-auto py-3">
       <Container className="text-center">
-        
-        <Row>
-          <Col >
-            <span>Developed with &#9829; by JokiestJoke</span>
-            <SocialsButtonGroup />
-          </Col>
-          
-        </Row>
-        
+        <span>Developed with &#9829; by JokiestJoke</span>
+        <SocialsButtonGroup />  
       </Container>
     </footer>
   );
