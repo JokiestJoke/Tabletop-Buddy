@@ -1,7 +1,13 @@
 @use "./variables" as *;
 
 .card {
-  width: 200px;
-  height: 450px;
   background-color: $color-lavender;
+  margin: 5px 5px;
+}
+
+.row {
+  border-radius: 5px;
+  border-color: $color-black;
+  border-style: solid;
+  border-width: 2px;
 }

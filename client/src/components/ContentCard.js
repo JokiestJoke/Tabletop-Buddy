@@ -4,16 +4,15 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import '../scss/_content-card.scss'
 
-const ContentCard = ({ mediaPathway, cardTitle, buttonText }) => {
+const ContentCard = ({ mediaPathway, cardTitle, buttonText, cardText }) => {
   return (
-    <Col md={2}>
-      <Card>
+    <Col>
+      <Card >
         <Card.Img variant="top" src={mediaPathway} />
         <Card.Body>
           <Card.Title>{cardTitle}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            { cardText }
           </Card.Text>
           <Button variant="primary">{buttonText}</Button>
         </Card.Body>
