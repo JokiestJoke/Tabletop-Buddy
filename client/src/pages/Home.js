@@ -16,13 +16,11 @@ import Warhammer40kGoldenThrone from '../utils/images/Warhammer_Golden_Throne_40
  */
 const Home = () => {
 
-  const { user } = useState(false);
+  const [user, setUser] = useState(false);
   
   return (
     <MainLayout>
       <Container className='text-center home'>
-        {console.log(user)}
-        
         <h1>Tabletop Buddy</h1>
         
         {user ? (

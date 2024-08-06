@@ -10,7 +10,7 @@
   padding: 0px;
   justify-content: center;
   text-align: center;
-  height: 580px;
+  height: 600px;
   width: 400px;
 
   .card-img-top {
@@ -19,9 +19,8 @@
 
   @media (min-width: $breakpoint-md) {
     .card-img-top {
-      width: 400px;
-      height: 400px;
-      
+      height: 300px;
+      width: 400px;  
     }
   }
   
