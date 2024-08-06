@@ -6,29 +6,30 @@
 
 .card {
   background-color: $color-lavender;
-  margin: 5px 5px;
+  margin: 0px;
+  padding: 0px;
   justify-content: center;
   text-align: center;
-  height: 550px;
+  height: 580px;
   width: 400px;
+
+  .card-img-top {
+    padding: 5px 10px 5px 10px;
+  }
 
   @media (min-width: $breakpoint-md) {
     .card-img-top {
       width: 400px;
       height: 400px;
+      
     }
   }
   
   .card-body {
-    @media (max-width: $breakpoint-sm) {
-      .h5{
-        color: aliceblue;
-      }
+    .h5 {
+      color: $color-white;
+      text-decoration: underline;
     }
-
-    
-    
-    
   }
 }
 
