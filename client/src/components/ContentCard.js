@@ -6,7 +6,7 @@ import '../scss/_content-card.scss'
 
 const ContentCard = ({ mediaPathway, cardTitle, buttonText, cardText }) => {
   return (
-    <Col>
+    <Col className='d-flex justify-content-center'>
       <Card >
         <Card.Img variant="top" src={mediaPathway} />
         <Card.Body>

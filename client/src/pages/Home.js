@@ -20,30 +20,16 @@ const Home = () => {
         <Row className='d-flex justify-content-sm-around align-items-sm-center flex-sm-wrap'>
           <ContentCard
             mediaPathway={DnDPartyImage}
-            cardTitle={'Dungeon & Dragons: Character Creator'}
-            cardText={'Enter a world of fantasy and create a character'}
-            buttonText={'Create Character'}
+            cardTitle={'Dungeon & Dragons'}
+            cardText={'Enter a world of fantasy today with the help of our beginner friendly tools.'}
+            buttonText={'Let\'s Begin'}
           />
 
           <ContentCard 
             mediaPathway={Warhammer40kGoldenThrone}
-            cardTitle={'Warhammer 40,000: Army Builder'}
-            cardText={'Jump in to the grim dark future of Warhammer 40,000 and create an army'}
-            buttonText={'Build an army'}
-          />
-
-          <ContentCard 
-            mediaPathway={MonsterCreatorImage}
-            cardTitle={'Dungeons & Dragons: Monster Creator'}
-            cardText={'Create monsters & bosses for your campaigns'}
-            buttonText={'Build an army'}
-          />
-
-          <ContentCard
-            mediaPathway={WrathAndGloryImage}
-            cardTitle={'Warhammer 40,000: Wrath & Glory Character Creator'}
-            cardText={'Jump in to the grim dark future of Warhammer 40k'}
-            buttonText={'Create Character'}
+            cardTitle={'Warhammer 40,000'}
+            cardText={'Jump in to the grim dark future of Warhammer 40,000 with the help of our beginner friendly tools.'}
+            buttonText={'Let\'s Begin'}
           />
 
         </Row>
