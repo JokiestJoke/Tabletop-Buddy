@@ -3,6 +3,10 @@
 footer {
   padding: 12px 0;
   background-image: $purple-lavender-gradient;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
   
   a {
     color: $color-white;

@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.container {
+  .col {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    background: $purple-lavender-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+  
+    @media (min-width: $breakpoint-md) {
+      font-size: 70px;
+    }
+  }
+  
+  p {
+    font-size: 22px;
+    font-weight: $font-semi-bold;
+    color: $color-black;
+  
+    @media (min-width: $breakpoint-md) {
+      font-size: 25px;
+    }
+  }
+  
+}
+
+
