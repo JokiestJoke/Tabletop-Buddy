@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MainLayout from '../Layouts/MainLayout';
+import ContentCarousel from '../components/ContentCarousel';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
@@ -16,7 +17,7 @@ import Warhammer40kGoldenThrone from '../utils/images/Warhammer_Golden_Throne_40
  */
 const Home = () => {
 
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   
   return (
     <MainLayout>
@@ -24,22 +25,28 @@ const Home = () => {
         <h1>Tabletop Buddy</h1>
         
         {user ? (
-          <Row className='d-flex justify-content-sm-around align-items-sm-center flex-sm-wrap'>
-            <ContentCard
-              mediaPathway={DnDPartyImage}
-              cardTitle={'Dungeon & Dragons'}
-              cardText={'Enter a world of fantasy today with the help of our beginner friendly tools.'}
-              buttonText={'Let\'s Begin'}
-            />
-  
-            <ContentCard 
-              mediaPathway={Warhammer40kGoldenThrone}
-              cardTitle={'Warhammer 40,000'}
-              cardText={'Jump in to the grim dark future of Warhammer 40,000 with the help of our beginner friendly tools.'}
-              buttonText={'Let\'s Begin'}
-            />
-  
-          </Row>
+          <>
+            <Col>
+              <Row className='d-flex justify-content-sm-around align-items-sm-center flex-sm-wrap'>
+                <ContentCard
+                  mediaPathway={DnDPartyImage}
+                  cardTitle={'Dungeon & Dragons'}
+                  cardText={'Enter a world of fantasy a today with the help of our beginner friendly tools.'}
+                  buttonText={'Let\'s Begin'}
+                />
+      
+                <ContentCard 
+                  mediaPathway={Warhammer40kGoldenThrone}
+                  cardTitle={'Warhammer 40,000'}
+                  cardText={'Jump in to the grim dark future with the help of our beginner friendly tools.'}
+                  buttonText={'Let\'s Begin'}
+                />
+              </Row>
+            </Col>
+            <Col>
+              <ContentCarousel />
+            </Col>
+          </>
         ) : (
           <>
             <Col className='d-flex justify-content-center'>

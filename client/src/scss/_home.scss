@@ -1,10 +1,7 @@
 @use "./variables" as *;
 
 .container {
-  .col {
-    text-align: center;
-    justify-content: center;
-  }
+  
   
   h1 {
     font-size: 50px;
@@ -23,15 +20,47 @@
   }
   
   p {
-    font-size: 22px;
+    &:not(p.card-text){
+      font-size: 22px;
+    }
+    font-size: 18px;
     font-weight: $font-semi-bold;
     color: $color-black;
   
-    @media (min-width: $breakpoint-md) {
-      font-size: 25px;
-    }
+    
   }
-  
+
+  a {
+    &:not(a.dropdown-item):not(a.nav-link):not(a.navbar-brand) { 
+     text-decoration: none;
+     font-weight: $font-semi-bold;
+     display: inline-block;
+     background: $purple-lavender-gradient;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -ms-background-clip: text;
+     -o-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -ms-text-fill-color: transparent;
+     -o-text-fill-color: transparent;
+
+     &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $color-drexel-orange;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    }
+  } 
 }
 
 

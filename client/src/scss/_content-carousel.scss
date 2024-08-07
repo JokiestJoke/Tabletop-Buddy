@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.carousel {
+  display: 'block';
+  padding: 30;
+  height: 600px;
+  border: solid black;
+
+  .carousel-inner {
+    .carousel-item{
+      .carousel-caption {
+        .h5 {
+          color: red;
+        }
+      }
+    }
+  }
+}
