@@ -5,6 +5,7 @@
   .row {
     background-image: url('../utils/images/tavern_wall_background_500_x_500.png');
     height: 600px;
+    box-shadow: 2px 2px 2px 2px $color-shadow-gray;
   }
    
   h1 {
