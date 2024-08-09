@@ -1,16 +1,12 @@
 @use "./variables" as *;
 
-// .col {
-//   width: 300px;
-// }
-
 .card {
   background-color: $color-lavender;
   margin: 0px;
   padding: 0px;
   justify-content: center;
   text-align: center;
-  height: 600px;
+  height: 500px;
   width: 400px;
 
   .card-img-top {
@@ -34,9 +30,6 @@
 
 .row {
   border-radius: 5px;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 2px;
   padding: 10px;
   margin: 10px;
 }

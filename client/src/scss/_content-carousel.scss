@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.carousel {
+  padding: 30;
+  height: 500px;
+  width: 600px;
+  border: solid black;
+
+  .carousel-caption {
+    background-color: $color-lavender;
+    opacity: .9;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px -2px 2px $color-shadow-gray;
+    
+    h5 {
+      color: $color-white;
+      opacity: 1;
+      font-style: bold;
+    }
+    
+    p {
+      color: $color-black;
+      font-style: $font-semi-bold;
+      opacity: 1;
+    }
+  }
+ 
+}
