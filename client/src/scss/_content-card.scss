@@ -8,6 +8,7 @@
   text-align: center;
   height: 500px;
   width: 400px;
+  box-shadow: 0px -2px 2px $color-shadow-gray;
 
   .card-img-top {
     padding: 5px 10px 5px 10px;
@@ -30,9 +31,6 @@
 
 .row {
   border-radius: 5px;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 2px;
   padding: 10px;
   margin: 10px;
 }

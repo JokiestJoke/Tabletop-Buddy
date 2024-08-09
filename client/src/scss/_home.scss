@@ -1,12 +1,17 @@
 @use "./variables" as *;
 
 .container {
-  
-  
+
+  .row {
+    background-image: url('../utils/images/tavern_wall_background_500_x_500.png');
+    height: 600px;
+  }
+   
   h1 {
     font-size: 50px;
     background: $purple-lavender-gradient;
     background-clip: text;
+    padding: 0px 0px 30px 0px;
     -webkit-background-clip: text;
     -ms-background-clip: text;
     -o-background-clip: text;
@@ -31,10 +36,14 @@
   }
 
   a {
-    &:not(a.dropdown-item):not(a.nav-link):not(a.navbar-brand) { 
+    &:not(a.dropdown-item)
+    :not(a.nav-link)
+    :not(a.navbar-brand)
+    :not(a.carousel-control-next)
+    :not(a.carousel-control-prev) { 
      text-decoration: none;
      font-weight: $font-semi-bold;
-     display: inline-block;
+     display: flex;
      background: $purple-lavender-gradient;
      background-clip: text;
      -webkit-background-clip: text;

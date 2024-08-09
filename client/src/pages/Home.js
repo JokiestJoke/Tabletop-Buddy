@@ -11,6 +11,7 @@ import '../scss/_home.scss'
 import dicey from '../utils/Dicey_Mascot.png'
 import DnDPartyImage from '../utils/images/DnD_Party_400x400.png'
 import Warhammer40kGoldenThrone from '../utils/images/Warhammer_Golden_Throne_400_x_400.png'
+import TavernWall from '../utils/images/tavern_wall_background_500_x_500.png'
 
 /**
  * The Home component serves as the landing page of the application.
