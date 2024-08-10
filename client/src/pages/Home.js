@@ -15,10 +15,10 @@ import Warhammer40kGoldenThrone from '../utils/images/Warhammer_Golden_Throne_40
 /**
  * The Home component serves as the landing page of the application.
  */
-const Home = () => {
 
+const Home = () => {
   const [user, setUser] = useState(true);
-  
+
   return (
     <MainLayout>
       <Container className='text-center home'>

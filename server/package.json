@@ -2,6 +2,8 @@
   "name": "server",
   "type": "module",
   "dependencies": {
-    "express": "^4.19.2" 
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "express": "^4.19.2"
   }
 }
