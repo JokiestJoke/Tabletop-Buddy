@@ -10,6 +10,9 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "globals": {
+      "process": "readonly"
+  },
   "rules": {
     "comma-dangle": [
       "error",
