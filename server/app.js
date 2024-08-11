@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import { router as welcomeRouter } from './routes/welcome.routes.js';
 
 dotenv.config();
 
@@ -15,5 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 // API Versioning.
 const apiVersion = '/api/v1';
 
+// Welcome Route.
+app.use(`${apiVersion}/`, welcomeRouter);
 
 export default app;

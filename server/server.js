@@ -1,4 +1,3 @@
-import express from 'express';
 import db from './models/index.js';
 import { startDatabase } from './config/db.config.js';
 import logger from './config/logger.config.js';
