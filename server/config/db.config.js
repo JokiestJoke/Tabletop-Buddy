@@ -39,4 +39,3 @@ const startDatabase = async (db) => {
 };
 
 export { DB_CONFIG, startDatabase };
-

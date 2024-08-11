@@ -2,13 +2,19 @@
   "name": "server",
   "type": "module",
   "dependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "babel-jest": "^29.7.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "express": "^4.19.2",
+    "jest": "^29.7.0",
     "mysql2": "^3.6.2",
     "sequelize": "^6.37.3",
     "winston": "^3.14.1",
     "winston-daily-rotate-file": "^5.0.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
